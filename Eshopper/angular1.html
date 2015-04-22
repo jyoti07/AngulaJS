@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+	Simple Angular JS Hello World:
+	</title>
+	<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="000.js"></script>
+	
+</head>
+
+<body ng-app="HelloApp">
+	<h1>AngularJS</h1>
+	<div ng-controller="HelloController">{{hello}}
+	{{videos}}
+	{{videos.singer}}
+	
+	<ul>
+		<li ng-repeat="c in videos">
+		<span>{{c.singer}}</span>
+		<span><img src="{{c.imglink}}" alt="" </span>
+		
+		</li>
+	</ul>
+	
+	<table>
+		<tr ng-repeat="c in courses">
+		<td>{{c.title}}</td>
+		<td>{{c.description}}</td>
+		
+		</tr>
+	</table>
+	
+	</div>
+</body>
+
+</html>
